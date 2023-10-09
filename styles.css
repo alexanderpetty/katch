@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0f5; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-left a, .navbar-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-left a.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #FFD700;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: rgb(22, 20, 26); 
+    color: white;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 60px 0;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Image styling */
+.hero-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero-images img:first-child {
+    clip-path: polygon(0 0, 90% 0, 65% 100%, 0% 100%);
+    transition: transform 0.3s; 
+    max-width: 55%; /* Decrease from the original 60% to make it smaller */
+    flex: 1;
+    margin-right: -18%; /* Increase negative margin to shift the image to the right */
+}
+
+.hero-images img:last-child {
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 10% 100%);
+    transition: transform 0.5s; 
+    max-width: 55%; /* Decrease from the original 60% to make it smaller */
+    flex: 1;
+    margin-left: -5%; /* Increase negative margin to shift the image to the right */
+}
+
+.hero-images:hover img:first-child {
+    transform: translateY(-40px); 
+}
+
+.hero-images:hover img:last-child {
+    transform: translateY(40px); 
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #222; 
+}
+
+.navigation-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.navigation-links a:hover {
+    border-bottom-color: #FFD700; 
+}
+
+.table-container {
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Background color for the table container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5; /* Add a hover effect for rows */
+}
+
+.recruit-class-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    background-color: #f1f1f1; /* Same color as the body for a seamless look */
+}
+
+.recruit-class-toggle label {
+    margin-right: 10px;
+}
+
+.recruit-class-toggle select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

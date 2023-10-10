@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0f5; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-left a, .navbar-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-left a.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #FFD700;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif; /* Update with your preferred font */
+    background-image: url('path_to_your_image.jpg'); /* Add your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar styling */
+.navbar-tab {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar-tab:hover {
+    color: #555;
+    background-color: #f2f2f2;
+}
+
+/* Main search bar */
+#school-search {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #02008b; /* Deep purple shade, modify as needed */
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b42ac; /* Slightly darker shade for hover */
+}
+
+/* Advanced search section */
+.advanced-search-section {
+    display: none; /* By default, it's hidden. Use JS to toggle this on button click */
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.6); /* Slight white background for contrast */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.advanced-search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

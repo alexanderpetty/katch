@@ -190,3 +190,23 @@ tr:hover {
 .header select:hover {
     background-color: #f1f1f1; 
 }
+
+
+.toggle-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #555;
+}

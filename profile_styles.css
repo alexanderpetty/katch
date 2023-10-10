@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0f5; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-left a, .navbar-right a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-left a.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #FFD700;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.profile-banner {
+    background-image: url('shane_banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* adjust as per your banner's height */
+    position: relative;
+    color: white;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;  /* adjust for spacing */
+    position: absolute;  /* this will position it over the banner */
+    bottom: 0;  /* position at the bottom of the banner */
+    left: 0;  /* position at the left of the banner */
+    background-color: rgba(0, 0, 0, 0.8); /* This is the dark grey opaque rectangle */
+    border-radius: 10px; /* Optional: For rounded corners */
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;  /* spacing between the image and the name */
+    background-color: transparent; /* Removes any background */
+}
+
+.profile-info h1 {
+    font-size: 1.5em;
+    margin: 0;
+    background-color: transparent; /* Removes any background */
+}
+
+.profile-info p {
+    font-size: 1em;
+    margin: 20px 0 0;
+    background-color: transparent; /* Removes any background */
+}
+
+
+.profile-info {
+    height: 80px;
+    padding: 10px 10px;
+    border-radius: 20px; /* This will give it a rounded rectangle appearance */
+    display: flex;
+    flex-direction: column; /* To stack the items vertically */
+    align-items: center; /* To center the text items */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.profile-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    font-size: 1.1em;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.profile-nav a.active, .profile-nav a:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+.profile-content {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.film-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.upload-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.table-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.meets {
+    font-family: Arial, sans-serif; /* or any preferred font */
+}
+
+.see-all {
+    float: right;
+    color: blue;
+    text-decoration: none;
+}
+
+.meet-item {
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.meet-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.meet-icon {
+    width: 30px; /* adjust based on icon size */
+    margin-right: 10px;
+}
+
+.meet-date {
+    margin-left: auto;
+    color: gray;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.meet-events {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.meet-events td {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.pb-tag {
+    background-color: #FFD700; /* gold color for PB */
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.academics-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.academics-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.academics-section td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.academics-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.academics-section tr:hover {
+    background-color: #e0e0e0;
+}
